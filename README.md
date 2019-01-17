@@ -1,17 +1,13 @@
 # Temperature control utility for *Raspberry Pi 3*
 
-This utility is made for cases when one has an USB fan that he wants to use for *RPi 3* cooling. The utility is made possible by the fact 
-that the USB hub's power in *RPi 3* is switchable. Unfortunately *RPi 3* does not support individual port power control, therefore no other 
-usb devices can be used simultaneously with the fan as this utility would turn the power off for all of them. The Ethernet port should remain 
-working in most cases, but there is a chance that the power will also turn off for this port, since it's a part of the USB hub. This 
-software will NOT harm your USB hub permanently. As soon as the utility is killed, the power is restored.
+This utility is made for cases when one has a USB fan that he wants to use for *RPi 3* cooling. The utility is made possible by the fact that the USB hub's power in *RPi 3* is switchable. Unfortunately *RPi 3* does not support individual port power control, therefore no other usb devices can be used simultaneously with the fan as this utility would turn the power off for all of them. The Ethernet port should remain working in most cases, but there is a chance that the power will also turn off for this port, since it's a part of the USB hub. This software will NOT harm your USB hub permanently. As soon as the utility is killed, the power is restored.
 
 ## Usage
-The utility is made for *Python 3*. Can be ran by typing
-```python3 temp_ctrl.py```
-into the terminal.
-
-### Config
+The utility is made for *Python 3*. Can be ran by typing the following command into the terminal.
+```
+python3 temp_ctrl.py
+```
+### Configuration
 The utility provides a possibility to configure the control values. Samle of the `config` file is shown below.
 ```
 max_temp=60  # Fan turns on at this temperature
